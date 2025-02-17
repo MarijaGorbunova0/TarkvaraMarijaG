@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27');
+
+html {
+  font-family: 'Montserrat';
+}
+
+body {
+  overflow: hidden;
+  margin: 0%;
+  background-color: #F5C100;
+  color: rgb(214, 214, 214);
+}
+
+.block{
+  background: #560CE9;
+  height: 80px;
+  position: absolute;
+  width: 100%;
+}
+.window {
+  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.inside {
+  background-color: #1d132c6b;
+  width: 80%;
+  height: 77vh;
+  border-radius: 20px;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome {
+  margin-top:100px;
+  text-align: center;
+  color: rgb(214, 214, 214);
+}
+
+.playBut {
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: rgb(214, 214, 214);
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  filter: blur(0px);
+  background: linear-gradient(45deg, #ff0000, #d34587, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+
+
+.playBut:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  z-index: -1;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000,#d34587,  #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .10s ease-in-out;
+  animation: animate 50s linear infinite;
+}
+
+.playBut:hover:before {
+  opacity: 1;
+}
+
+.playBut:hover:active {
+  background: none;
+}
+
+.playBut:hover:active:before {
+  filter: blur(2px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.ssilkads {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.textVnizu {
+  opacity: 0;
+  color: rgb(214, 214, 214);
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.buttons {
+ width:150px;
+  height: 80px;
+  background-color: none;
+  margin-left: 200px;
+  position: absolute;
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.buttons2 {
+  text-decoration-line: none;
+  padding: 5px;
+  text-align: center;
+  color: rgb(214, 214, 214);
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+  margin-left: 30px;
+  display: inline-flex;
+  justify-content: center;
+  left: 40px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .inside {
+    width: 90%;
+    height: 70vh;
+    font-size: 14px;
+  }
+  
+  .playBut {
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons2 {
+    margin-top: 20px;
+  }
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
