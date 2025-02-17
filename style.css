@@ -7,15 +7,22 @@ html {
 body {
   overflow: hidden;
   margin: 0%;
-  background-color: #F5C100;
-  color: rgb(214, 214, 214);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .block{
-  background: #560CE9;
+  background: none;
   height: 80px;
   position: absolute;
   width: 100%;
+}
+.block img {
+  height: 80px;
+  padding-right: 16px;
+}
+.block h1 {
+  display:ruby-text-container;
 }
 .window {
   justify-items: center;
@@ -25,7 +32,7 @@ body {
 }
 
 .inside {
-  background-color: #1d132c6b;
+  background-color: #00000000;
   width: 80%;
   height: 77vh;
   border-radius: 20px;
@@ -36,10 +43,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.inside img {
+  border-radius: 50%;
+  left: 25%;
+}
+
 .welcome {
   margin-top:100px;
   text-align: center;
-  color: rgb(214, 214, 214);
+  color: rgb(255, 255, 255);
 }
 
 .playBut {
@@ -47,14 +59,14 @@ body {
   width: 200px;
   border: none;
   outline: none;
-  color: rgb(214, 214, 214);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   filter: blur(0px);
-  background: linear-gradient(45deg, #ff0000, #d34587, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #00ff00, #000000, #00ff00, #000000, #00ff00, #000000);
   background-size: 400%;
   display: flex;
   align-items: center;
@@ -62,8 +74,6 @@ body {
   margin: 0 auto;
   margin-top: 0px;
 }
-
-
 
 .playBut:before {
   position: absolute;
@@ -74,7 +84,7 @@ body {
   width: calc(100% + 4px);
   z-index: -1;
   filter: blur(5px);
-  background: linear-gradient(45deg, #ff0000,#d34587,  #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #00ff00, #000000, #00ff00, #000000, #00ff00, #000000);
   background-size: 400%;
   transition: opacity .10s ease-in-out;
   animation: animate 50s linear infinite;
@@ -82,6 +92,10 @@ body {
 
 .playBut:hover:before {
   opacity: 1;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+  background-size: 400%;
+  transition: opacity .10s ease-in-out;
+  animation: animate 30s linear infinite;
 }
 
 .playBut:hover:active {
@@ -112,7 +126,7 @@ body {
 
 .textVnizu {
   opacity: 0;
-  color: rgb(214, 214, 214);
+  color: rgb(255, 255, 255);
   text-align: center;
   transition: opacity 1s ease-in-out;
 }
@@ -136,7 +150,7 @@ body {
   text-decoration-line: none;
   padding: 5px;
   text-align: center;
-  color: rgb(214, 214, 214);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;

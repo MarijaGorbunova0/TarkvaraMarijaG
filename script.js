@@ -1,4 +1,3 @@
-
 let textVnizuKnopki = document.querySelectorAll(".textVnizu");
 let playBut= document.querySelectorAll(".playBut");
 
@@ -20,8 +19,8 @@ playBut.forEach((button) => {
             h = canvas.height = innerHeight,
             particles = [],
             properties = {
-                bgColor           : "#290671",
-                particleColor     : "rgba(255, 40, 40, 1)",
+                bgColor           : "#000000",
+                particleColor     : "rgba(0, 255, 0, 1)",
                 particleRadius    : 3,
                 particleCount     : 60,
                 particleMaxVelocity: 0.5,
